@@ -21,8 +21,8 @@ vcf_data/
 └── other_samples...                                                             
 
 --------------------------------------------------------------------------------------
-You would execute the script with the command:
-python variant_metrics.py /path/to/vcf_data
+You would execute the script with the command:                                     
+python VCFStats.py /path/to/vcf_data                                             
 
 The script will search for files named "*.hard-filtered.vcf.gz" within each sample subdirectory, analyze them, and save the output files with the variant metrics summary in the same subdirectories. For example, the output file for sample1.hard-filtered.vcf.gz will be saved as sample1.variant_metrics.txt within the sample1 subdirectory.
 
