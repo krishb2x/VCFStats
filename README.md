@@ -1,0 +1,32 @@
+# VCFStats
+
+The script is designed to analyze multiple VCF files and generate a summary of variant metrics. It takes a directory path as a command-line argument and searches for VCF files with the extension ".hard-filtered.vcf.gz" within the subdirectories of the specified directory.
+
+For each matching file, it performs the following tasks:
+1- Counts various metrics from the VCF file, including the total number of variants, passed variants, SNPs, insertions, deletions, complex indels, mixed variants, heterozygous and homozygous variant genotypes, singletons, and the total number of called genotypes.
+2- Saves the results in text files with the same names as the input VCF files, but with the extension changed to ".variant_metrics.txt".
+
+---------------------------------------------------------------------------------------------
+Example:
+Suppose you have a directory structure as follows:
+
+vcf_data/                                                                   
+├── sample1/                                                          
+│ ├── sample1.hard-filtered.vcf.gz                                               
+│ └── other_files...                                                                       
+├── sample2/                                                                                    
+│ ├── sample2.hard-filtered.vcf.gz                                                       
+│ └── other_files...                                                                                   
+└── other_samples...                                                             
+
+--------------------------------------------------------------------------------------
+You would execute the script with the command:                                     
+
+python VCFStats.py /path/to/vcf_data                                             
+
+The script will search for files named "*.hard-filtered.vcf.gz" within each sample subdirectory, analyze them, and save the output files with the variant metrics summary in the same subdirectories. For example, the output file for sample1.hard-filtered.vcf.gz will be saved as sample1.variant_metrics.txt within the sample1 subdirectory.
+
+By following this structure and running the script, you can easily analyze multiple VCF files and obtain summaries of variant metrics for each file.
+
+
+Thank you for using this script!
