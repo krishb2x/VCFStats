@@ -29,4 +29,4 @@ The script will search for files named "*.hard-filtered.vcf.gz" within each samp
 By following this structure and running the script, you can easily analyze multiple VCF files and obtain summaries of variant metrics for each file.
 
 
-Thank you for using the variant metrics script!
+Thank you for using this script!
