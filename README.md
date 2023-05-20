@@ -11,14 +11,14 @@ Example:
 
 Suppose you have a directory structure as follows:
 
-vcf_data/
-├── sample1/
-│ ├── sample1.hard-filtered.vcf.gz
-│ └── other_files...
-├── sample2/
-│ ├── sample2.hard-filtered.vcf.gz
-│ └── other_files...
-└── other_samples...
+vcf_data/                                                                   
+├── sample1/                                                          
+│ ├── sample1.hard-filtered.vcf.gz                                               
+│ └── other_files...                                                                       
+├── sample2/                                                                                    
+│ ├── sample2.hard-filtered.vcf.gz                                                       
+│ └── other_files...                                                                                   
+└── other_samples...                                                             
 
 --------------------------------------------------------------------------------------
 You would execute the script with the command:
