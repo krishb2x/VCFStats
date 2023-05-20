@@ -90,4 +90,4 @@ for subdir in subdir_list:
                     output_file_obj.write(f'Number of singletons: {singleton}\n')
                     output_file_obj.write(f'Number of called genotypes: {called_genotypes}\n')
 
-                print(f'Output saved in vcf_path + {output_path}')
+                print(f'Output saved in {vcf_path} + {output_path}')
